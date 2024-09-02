@@ -1,0 +1,98 @@
+html {
+    background-color: yellow;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body, .container {
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    color: unset;
+    display: block;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+}
+
+header, footer {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    gap: 2rem;
+    font-size: 1.25rem;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 20%), transparent);
+    font-weight: bold;
+}
+
+footer {
+    flex-direction: row-reverse;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 20%), transparent);
+}
+
+.page-content {
+    display: grid;
+    align-items: center;
+    grid-auto-rows: minmax(5rem, auto);
+    margin-inline: auto;
+    text-align: center;
+}
+
+.tick {
+    font-size: 10rem;
+}
+
+.collect-page {
+    display: grid;
+    grid-template-areas: "access-code" "qr-code" "info";
+    gap: 1rem;
+    align-items: center;
+}
+
+.access-code-info {
+    grid-area: access-code;
+}
+
+.access-code {
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+    margin-left: 0.5ch;
+    font-family: monospace;
+    text-shadow: 2px 2px rgba(0, 0, 0, 20%);
+}
+
+.qr-info {
+    flex: 1;
+    grid-area: qr-code;
+}
+
+.instruction {
+    grid-area: info;
+    padding-inline: 2rem;
+}
+
